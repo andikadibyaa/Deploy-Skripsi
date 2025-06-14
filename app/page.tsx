@@ -280,7 +280,7 @@ const startProcessing = () => {
     formData.append("video", uploadedVideo)
 
     try {
-      const res = await fetch("http://localhost:5000/analyze_video", {
+      const res = await fetch(process.env.ANALYZE_VIDEO_URL || "http://localhost:5000/analyze_video", {
         method: "POST",
         body: formData,
       })
@@ -314,7 +314,7 @@ const startProcessing = () => {
         const formData = new FormData()
         formData.append("image", blob, "frame.jpg")
         try {
-          const res = await fetch("http://localhost:5000/detect", {
+          const res = await fetch(process.env.DETECT_URL || "http://localhost:5000/detect", {
             method: "POST",
             body: formData,
           })
@@ -368,7 +368,7 @@ const startProcessing = () => {
   }, [drowsinessScore, isDrowsy])
 
   useEffect(() => {
-    fetch("http://localhost:5000/history")
+    fetch(process.env.HISTORY_URL || "http://localhost:5000/history")
       .then((res) => res.json())
       .then((data) => setHistory(data))
       .catch(() => setHistory([]))
