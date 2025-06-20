@@ -280,7 +280,7 @@ const startProcessing = () => {
     formData.append("video", uploadedVideo)
 
     try {
-      const res = await fetch("http://localhost:5000/analyze_video",{
+      const res = await fetch("https://andikadibya-jagamudi.hf.space/analyze_video",{
         method: "POST",
         body: formData,
       })
@@ -314,7 +314,7 @@ const startProcessing = () => {
         const formData = new FormData()
         formData.append("image", blob, "frame.jpg")
         try {
-          const res = await fetch("http://localhost:5000/detect", {
+          const res = await fetch("https://andikadibya-jagamudi.hf.space/detect", {
             method: "POST",
             body: formData,
           })
@@ -368,7 +368,7 @@ const startProcessing = () => {
   }, [drowsinessScore, isDrowsy])
 
   useEffect(() => {
-    fetch("http://localhost:5000/history")
+    fetch("https://andikadibya-jagamudi.hf.space/history")
       .then((res) => res.json())
       .then((data) => setHistory(data))
       .catch(() => setHistory([]))
