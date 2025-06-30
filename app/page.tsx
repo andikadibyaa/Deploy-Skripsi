@@ -860,7 +860,7 @@ const startProcessing = () => {
                     </p>
 
                     <a
-                      href="https://github.com/yourusername/drowsiness-detection"
+                      href="https://github.com/andikadibyaa/TUGAS-AKHIR"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white rounded-lg transition-colors duration-200 font-medium text-sm"
@@ -897,7 +897,7 @@ const startProcessing = () => {
                     </p>
 
                     <a
-                      href="https://linkedin.com/in/yourprofile"
+                      href="https://www.linkedin.com/in/andikadibya/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 font-medium text-sm"
@@ -937,9 +937,9 @@ const startProcessing = () => {
                       <ul className="space-y-1 text-xs">
                         <li>• Next.js & React</li>
                         <li>• TensorFlow & Keras</li>
-                        <li>• OpenCV</li>
-                        <li>• Tailwind CSS</li>
                         <li>• Python</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• Typescript</li>
                       </ul>
                     </div>
 
